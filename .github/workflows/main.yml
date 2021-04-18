@@ -36,7 +36,7 @@ jobs:
 
         # Build Site
       - name: Build Hugo Site
-        run: hugo
+        run: hugo -D
 
       # Commit site to now branch
       - name: deploy to gh-pages
