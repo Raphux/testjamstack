@@ -2,7 +2,7 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
@@ -24,7 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+        with:
+          fetch-depth: 0
+
       # Set up HUGO env
       - name: Hugo setup
         uses: peaceiris/actions-hugo@v2.4.13
@@ -35,13 +37,12 @@ jobs:
         # Build Site
       - name: Build Hugo Site
         run: hugo
-        
+
       # Commit site to now branch
       - name: deploy to gh-pages
         uses: crazy-max/ghaction-github-pages@v2.3.0
-        with: 
+        with:
           target_branch: gh-pages
           build_dir: public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
