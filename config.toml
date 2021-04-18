@@ -1,4 +1,4 @@
-baseURL = "http://raphux.github.io/"
+baseURL = "http://raphux.github.io/testjamstack/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "tale"
