@@ -1,4 +1,4 @@
-baseURL = "https://raphux.github.io/testjamstack/"
+baseURL = "https://naughty-dubinsky-c4c463.netlify.app"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "tale"
