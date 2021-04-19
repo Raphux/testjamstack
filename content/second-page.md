@@ -1,7 +1,7 @@
 ---
 title: "Second Page"
 date: 2021-04-18T18:30:02+02:00
-draft: true
+draft: false
 ---
 
 # Second JAMSite Page

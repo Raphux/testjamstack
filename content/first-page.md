@@ -1,7 +1,7 @@
 ---
 title: "First Page"
 date: 2021-04-18T18:29:57+02:00
-draft: true
+draft: false
 ---
 
 # First JAMSite Page
