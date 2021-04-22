@@ -22,6 +22,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "date"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "select", options: ["Ray vijouen", "jane Doe"]}
       - {label: "Date", name: "date", widget: "datetime"}
